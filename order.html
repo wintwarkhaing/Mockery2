@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+       
+
+<link rel="stylesheet" href="css/material.min.css">
+<script src="js/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<script type="text/javascript" src="js/materialize.js"></script>
+    <title>Mokery2</title>
+   
+
+
+  </head>
+  <body>
+	
+  <!--nav-->
+	<nav style="background-color:white">
+<div class="row">
+      <div class="col s1"></div>
+      <div class="col s1"></div>
+    <div class="nav-wrapper">
+      <a class="brand-logo center" style="color:black">MYANMAR Online Shop </a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="home.html" style="color:black"><h5>Home</h5></a></li>
+        <li><a href="order.html" style="color:black"><h5>Order</h5></a></li>
+      </ul>
+	</div>
+    </div>
+  </nav>
+
+<!--cards-->
+<div class="row">
+      <div class="col s1"></div>
+      <div class="col s1"></div>
+<div class="col s8 m8">
+    <div class="card white darken-1 z-depth-4">
+	
+	<ul class="collection">
+	
+	<li class="collection-item"><font color="black"><b><h4>Order Details</h4></li>
+	
+	<li class="collection-item">&emsp;Name&emsp;&emsp;&emsp;&emsp;<input type="text" name="textbox1" width="25" height="20" placeholder="Please fill in your name " /></li>
+	
+	<li class="collection-item">&emsp;Phone<input type="text" name="textbox1" width="25" height="20" placeholder="Please fill in your phone number"/></li>
+      
+	<li class="collection-item">&emsp;Addresses<input type="text" name="textbox1" width="25" height="20" placeholder="Please fill in your address"/></li>
+    
+    
+    
+	</ul>	
+	
+	<div class="row">
+		<div class="col s1"></div>
+      		<div class="col s1"></div>
+      
+		<div class="col s3">
+			<button id="demo-show-toast" class="mdl-button mdl-js-button mdl-button--raised" type="button" style="background-color:black"><font color="white">Confirm Order</button>
+			<div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+  			<div class="mdl-snackbar__text"></div>
+ 			 <button class="mdl-snackbar__action" type="button"></button>
+			</div>
+		</div>
+		<div class="col s1"></div>
+      
+		<div class="col s2"><a href="home.html">
+			<button class="btn waves-effect waves-light" style="background-color:black">Cancle
+			 </button></a>
+		</div>
+	</div>	
+	<div class="row"></div>
+    </div>
+  </div>
+</div>     
+
+
+<!--footer-->
+<div class="row">
+      <div class="col s1"></div>
+      <div class="col s1"></div>
+<div class="col s8 m8">
+<footer class="mdl-mini-footer" style="background-color:white">
+  
+<div class="mdl-mini-footer__left-section">
+	  
+<a href="tel:09787577331">
+	
+	<img src="http://www.yunkey9.com/public-images/phone.png" class="phone" alt="customer service number">
+	     
+</a>
+  
+<a href="https://en-gb.facebook.com/login/">
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="http://www.yunkey9.com/public-images/facebook.png" class="visa" alt="facebook"></a> 
+ <a href="https://www.youtube.com/">
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="http://www.yunkey9.com/public-images/youtube.png" class="youtube" alt="youtube"></a>  
+
+</div>     
+</div>
+
+</footer>
+
+<script>
+(function() {
+  'use strict';
+  window['counter'] = 0;
+  var snackbarContainer = document.querySelector('#demo-toast-example');
+  var showToastButton = document.querySelector('#demo-show-toast');
+  showToastButton.addEventListener('click', function() {
+    'use strict';
+    var data = {message: 'Your now successfully ordered. Thank You!'};
+    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+  });
+}());
+
+</script>
+
+
+
+</body>
+</html>
